@@ -98,6 +98,7 @@ body {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    margin-left: -30px;
 }
 
 .menu .sidebar ul li a {
@@ -108,6 +109,7 @@ body {
     font-size: 16px;
     text-decoration: none;
     position: relative;
+    padding-left: 10px;
 }
 
 .menu .sidebar ul li a .icon {
@@ -117,16 +119,21 @@ body {
 }
 
 .menu .sidebar ul li a:hover {
-    background: #7f5af0;
+    background: #9b59b6;
+    width: 130%;
+    padding-right: 0px;
     color: #fffffe;
     border-right: none;
     border-radius: 0 20px 20px 0;
+    font-size: 1.1rem;
 }
-.menu .sidebar ul li a:active {
+.menu .sidebar ul li.active a{
     background: #7f5af0;
     color: #fffffe;
     border-right: none;
     border-radius: 0 20px 20px 0;
+    font-weight: bold;
+
 }
 
 .content .classmate_links{
