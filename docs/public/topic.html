@@ -2,81 +2,65 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="..\css\styles.css">
+        <link rel="stylesheet" type="text/css" href="../css\styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-        <title>LXMDOC T.I.</title>
-    </head>
-    
-    <body>
-        <div class="menu">
-                <div class="sidebar">
-                    <div class="profile">
-                        <img src="../images\profilepic.jpg" alt="profile">
-                        <h3>Spider-Man</h3>
-                        <p>Estudiante de informática</p>
-                    </div>
-                    <div class="menu-items">
-                        <ul>
-                            <li>
-                                <a href="../index.html">
-                                    <span class="icon"><i class="fas fa-home"></i></span>
-                                    <span class="item">Inicio</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="about.html">
-                                    <span class="icon"><i class="fas fa-user"></i></span>
-                                    <span class="item">Acerca de mí</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="contact.html">
-                                    <span class="icon"><i class="fas fa-envelope"></i></span>
-                                    <span class="item">Contacto</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="degree.html">
-                                    <span class="icon"><i class="fas fa-graduation-cap"></i></span>
-                                    <span class="item">Grado</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="net.html">
-                                    <span class="icon"><i class="fas fa-network-wired"></i></span>
-                                    <span class="item">Conexiones</span>
-                                </a>
-                            </li>
-                            <li class="active">
-                                <a href="topic.html">
-                                    <span class="icon"><i class="fas fa-book"></i></span>
-                                    <span class="item">Interés personal</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <title>LX Site</title>
+</head>
+<body>
+    <header class="container">
+        <div class="header-content">
+            <div class="header-title">
+                <a href="../index.html"><img src="../images/LX_logo.svg" alt="Logo" width="100">
+            </div>
+            <nav>
+                <a href="../index.html">INICIO</a>
+                <a href="about.html">ACERCA DE MÍ</a>
+                <a href="contact.html">CONTACTO</a>
+                <a href="degree.html">GRADO</a>
+                <a href="net.html">CONEXIONES</a>
+                <a href="topic.html" class="active">INTERÉS PERSONAL</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="content">
+            <h1>Tema de interés</h1>
+            <p>
+                Una sección temática (topic.html), que ofrecerá información completa sobre un tema elegido, ya sea relacionado con el trabajo práctico o con un tema de interés personal.
+            </p>
+        </div>
+
+        <section class="content">
+            <h1>Este texto da una breve descripción del contenido de esta página.</h1>
+            <p>Este es un texto de relleno que se utiliza para simular el contenido de una página web. Se utiliza para que el usuario pueda ver cómo se verá la página una vez que se haya completado. 
+                Este texto de relleno se utiliza para que el usuario pueda ver cómo se verá la página una vez que se haya completado. 
+                Este texto de relleno se utiliza para que el usuario pueda ver cómo se verá la página una vez que se haya completado. 
+                Este texto de relleno se utiliza para que el usuario pueda ver cómo se verá la página una vez que se haya completado. 
+                <br> <br> 
+            </p>          
+        </section>
+        <!--<div class="menu">
+            <div class="menu-content">
+                <div class="menu-item">
+                    <img src="./images/location-white.png" alt="Location Icon" class="menu-icon">
+                    <p>Location</p>
                 </div>
-        </div>
-        <div class="main-content">
-            <header class="header">
-                <h1>Interés personal</h1>
-            </header>
-
-            <section class="content">
-                <h1>Este texto da una breve descripción del contenido de esta página.</h1>
-                <p>Este es un texto de relleno que se utiliza para simular el contenido de una página web. Se utiliza para que el usuario pueda ver cómo se verá la página una vez que se haya completado. 
-                   Este texto de relleno se utiliza para que el usuario pueda ver cómo se verá la página una vez que se haya completado. 
-                   Este texto de relleno se utiliza para que el usuario pueda ver cómo se verá la página una vez que se haya completado. 
-                   Este texto de relleno se utiliza para que el usuario pueda ver cómo se verá la página una vez que se haya completado. 
-                   <br> <br> 
-                   Una sección temática (topic.html), que ofrecerá información completa sobre un tema elegido, ya sea relacionado con el trabajo práctico o con un tema de interés personal.
-                </p>
-            </section>
-
-        </div>
-        <footer>
-
-        </footer>
-    </body>
+                <div class="menu-item">
+                    <img src="./images/telephone-white.png" alt="Phone Icon" class="menu-icon">
+                    <p>+02 1234567890</p>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/envelope-white.png" alt="Email Icon" class="menu-icon">
+                    <p>demo@gmail.com</p>
+                </div>
+            </div>
+        </div>-->
+    </main>
+    <footer class="footer-section">
+        <p>&copy; 2024 All Rights Reserved. Design by <a href="#">Luis Xavier Montes de Oca Campos</a></p>
+    </footer>
+</body>
 </html>
