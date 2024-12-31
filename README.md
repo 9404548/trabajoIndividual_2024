@@ -2,8 +2,6 @@
 
 # Acciones
 
-
-
 - Notas personales:
     - Fue divertido diseñar el logo en el header.
     - La página index está terminada.
@@ -12,6 +10,7 @@
     - La página net está terminada.
     - La página fii está terminada.
     - La página degree está terminada.
+    - La página about está terminada.
 
 
 # DDD (Documento Detallado de Diseño)
