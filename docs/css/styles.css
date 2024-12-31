@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -7,7 +7,7 @@
 html, body {
     width: 100%;
     height: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -65,7 +65,7 @@ nav a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-family: Poppins, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 nav a:hover {
@@ -130,6 +130,7 @@ nav a.active {
 .row-items {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 80%;
     margin: 5px auto;
     gap: 20px;
@@ -147,6 +148,18 @@ nav a.active {
 .page-row.dark, .row-items.dark, .item.dark {
     background-color: #2d2e32;  
     color: #ffffff;
+}
+
+.item.dark a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: inherit;
+}
+
+.item.dark a:hover {
+    text-decoration: underline;
+    text-decoration-color: #95c407;
+    font-weight: bold;
 }
 
 .row-items .item.form-item {
@@ -178,11 +191,51 @@ nav a.active {
 }
 
 .classmate_links {
-    flex-grow: 2;
+    flex-grow: 4;
     display: flex;
     flex-direction: column;
     padding: 20px;
-    width: 60%;
+    width: 100%;
+    list-style: none;
+    text-align: left;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.classmate_links ul {
+    list-style: none;
+}
+
+.item.short {
+    width: 20%;
+    align-items: center;
+}
+
+.item.short.image {
+    padding: 0;
+    align-items: center;
+    max-height: fit-content;
+}
+
+.item img.side-image {
+    width: 100%;
+    max-width: 250px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+a.icon i {
+    font-size: 3rem;
+    color: #000000;
+}
+
+.item.short.image img {
+    width: 100%;
+    padding: 0;
+    border-radius: 15px;
+}
+.item.item.short.image img.visible-border {
+    border: 3px solid #1a2ffb;
 }
 
 .item a, .page-row a{
@@ -235,7 +288,7 @@ form button:hover {
 }
 
 .item img.lusion-screenshot {
-    width: 50%;
+    width: 100%;
     padding: 5px;
     border-radius: 15px;
 }
@@ -270,6 +323,66 @@ form button:hover {
     width: 50%;
     text-align: right;
 }
+
+.principal {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.principal.h {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.lusion-p, p.top {
+    font-size: 1.2rem;
+    font-weight: 500;
+    align-items: center;
+    align-content: center;
+}
+
+.lusion-p.cta {
+    text-align: center;
+}
+
+p.contenido-fii {
+    text-align: justify;
+}
+
+p.contenido-fii span.parte {
+    font-weight: bold;
+    text-align: center;
+}
+
+p.objetivos, ul.objetivos, ul.resultadosDA {
+    list-style-type: square;
+    text-align: justify;
+}
+
+p.purpose {
+    text-align: justify;
+    font-size: 1.1rem;
+}
+ 
+p.structure {
+    text-align: justify;
+}
+
+ul.subjects {
+    list-style-type: square;
+    text-align: justify;
+}
+
+ul.subjects li a, .item.dark ul.subjects li a {
+    text-decoration: none;
+}
+ul.subjects li a:hover, .item.dark ul.subjects li a:hover {
+    text-decoration: underline;
+    text-decoration-color: #1a2ffb;
+    text-decoration-thickness: 2px;
+    font-weight: bold;
+}
+
 
 
 @media (max-width: 1000px) {
@@ -307,6 +420,44 @@ form button:hover {
     .row p {
         width: 100%;
         text-align: center;
+    }
+
+    .row-items {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .row-items .item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .row-items .item.form-item {
+        width: 100%;
+    }
+
+    .item.short {
+        width: 100%;
+    }
+
+    .item.short.image img {
+        width: 100%;
+    }
+
+    .item.dark.bottom-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .item.dark.bottom-row .left-content,
+    .item.dark.bottom-row .right-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .item.dark.bottom-row .left-content img {
+        margin-right: 0;
+        margin-bottom: 10px;
     }
 }
 
