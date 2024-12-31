@@ -105,12 +105,14 @@ nav a.active {
     margin: 20px 0;
 }
 
-.row img.lusion-screenshot {
+img.lusion-screenshot {
     width: 50%;
     max-width: 500px;
     height: auto;
     padding: 5px;
     border-radius: 15px;
+    object-fit: contain;
+    overflow: hidden;
 }
 
 .row p {
@@ -121,6 +123,7 @@ nav a.active {
 .left-align {
     justify-content: flex-start;
     text-align: left;
+    align-items: center;
 }
 
 .right-align {
@@ -287,13 +290,16 @@ form button:hover {
     background-color: #1328bc; 
 }
 
-.item img.lusion-screenshot {
+/*img.lusion-screenshot, .row.left-align img.lusion-screenshot {
     width: 100%;
-    padding: 5px;
+    padding: 10px;
     border-radius: 15px;
-}
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+    }*/
 
-.right-content img.lusion-logo {
+ img.lusion-logo {
     float:right;
     width: 100%;
     align-items: right;
@@ -383,8 +389,6 @@ ul.subjects li a:hover, .item.dark ul.subjects li a:hover {
     font-weight: bold;
 }
 
-
-
 @media (max-width: 1000px) {
     header {
         max-height: fit-content;
@@ -418,6 +422,7 @@ ul.subjects li a:hover, .item.dark ul.subjects li a:hover {
     .row img.lusion-screenshot {
         width: 100%;
         max-width: none;
+        border-radius: 15px;
     }
 
     .row p {
@@ -445,6 +450,7 @@ ul.subjects li a:hover, .item.dark ul.subjects li a:hover {
 
     .item.short.image img {
         width: 100%;
+        border-radius: 15px;
     }
 
     .item.dark.bottom-row {
@@ -461,6 +467,7 @@ ul.subjects li a:hover, .item.dark ul.subjects li a:hover {
     .item.dark.bottom-row .left-content img {
         margin-right: 0;
         margin-bottom: 10px;
+        border-radius: 15px;
     }
 }
 
